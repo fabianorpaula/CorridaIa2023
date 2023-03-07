@@ -9,42 +9,96 @@ public class Carro : MonoBehaviour
     private NavMeshAgent Car;
     //Destino para segue
     public GameObject Destiny;
-    public List<GameObject> Destinos;
+    public int rota = 0;
+    public List<GameObject> Destinos1;
+    public List<GameObject> Destinos2;
     public int ponteiro;
      void Start()
     {
         Car = GetComponent<NavMeshAgent>();
         ponteiro = 0;
-        Destiny = Destinos[0];
+        rota = Random.Range(1, 3);
+        if (rota == 1)
+        {
+            Destiny = Destinos1[0];
+        }
+        else
+        {
+            Destiny = Destinos2[0];
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Envia o Carro para direção certa
-        Car.SetDestination(Destiny.transform.position);
-        //Distancia entre dois pontos
-        float distancia = Vector3.Distance(transform.position, Destiny.transform.position);
-        if (distancia < 5)
+        if (rota == 1)
         {
 
-            if(Destinos[ponteiro ].gameObject.tag == "Lento")
+            //Envia o Carro para direção certa
+            Car.SetDestination(Destiny.transform.position);
+            //Distancia entre dois pontos
+            float distancia = Vector3.Distance(transform.position, Destiny.transform.position);
+            if (distancia < 5)
             {
-                Car.speed = Random.Range(20, 30);
-            }
-            else if (Destinos[ponteiro].gameObject.tag == "Medio")
-            {
-                Car.speed = Random.Range(30, 40);
-            }
-            else if (Destinos[ponteiro].gameObject.tag == "Rapido")
-            {
-                Car.speed = Random.Range(40, 50);
-            }
 
-            //Aumenta ponteiro
-            ponteiro++;
-            if(ponteiro > Destinos.Count-1) { ponteiro = 0; }
-            Destiny = Destinos[ponteiro];
+                if (Destinos1[ponteiro].gameObject.tag == "Lento")
+                {
+                    Car.speed = Random.Range(20, 30);
+                }
+                else if (Destinos1[ponteiro].gameObject.tag == "Medio")
+                {
+                    Car.speed = Random.Range(30, 40);
+                }
+                else if (Destinos1[ponteiro].gameObject.tag == "Rapido")
+                {
+                    Car.speed = Random.Range(40, 50);
+                }
+
+                //Aumenta ponteiro
+                ponteiro++;
+                //Completou a volta
+                if (ponteiro > Destinos1.Count - 1)
+                {
+                    ponteiro = 0;
+                    rota = Random.Range(1, 3);
+                }
+                Destiny = Destinos1[ponteiro];
+            }
         }
+            if (rota == 2)
+            {
+
+                //Envia o Carro para direção certa
+                Car.SetDestination(Destiny.transform.position);
+                //Distancia entre dois pontos
+                float distancia2 = Vector3.Distance(transform.position, Destiny.transform.position);
+                if (distancia2 < 5)
+                {
+
+                    if (Destinos2[ponteiro].gameObject.tag == "Lento")
+                    {
+                        Car.speed = Random.Range(20, 30);
+                    }
+                    else if (Destinos2[ponteiro].gameObject.tag == "Medio")
+                    {
+                        Car.speed = Random.Range(30, 40);
+                    }
+                    else if (Destinos2[ponteiro].gameObject.tag == "Rapido")
+                    {
+                        Car.speed = Random.Range(40, 50);
+                    }
+
+                    //Aumenta ponteiro
+                    ponteiro++;
+                    //Completou a volta
+                    if (ponteiro > Destinos2.Count - 1)
+                    {
+                        ponteiro = 0;
+                        rota = Random.Range(1, 3);
+                    }
+                    Destiny = Destinos2[ponteiro];
+                }
+            }
     }
 }

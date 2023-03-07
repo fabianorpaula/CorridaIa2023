@@ -3193,7 +3193,7 @@ Transform:
   - {fileID: 1840718430}
   - {fileID: 1742400423}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &268727389
 PrefabInstance:
@@ -9727,7 +9727,7 @@ GameObject:
   m_Layer: 0
   m_Name: Carro2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9744,7 +9744,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destiny: {fileID: 1944143998}
-  Destinos:
+  rota: 0
+  Destinos1:
+  - {fileID: 1944143998}
+  - {fileID: 1809183941}
+  - {fileID: 1625137964}
+  - {fileID: 2017060732}
+  - {fileID: 1157793897}
+  - {fileID: 994445482}
+  - {fileID: 88324064}
+  - {fileID: 1527566660}
+  - {fileID: 1255574934}
+  - {fileID: 2073605222}
+  - {fileID: 1538303017}
+  - {fileID: 1816112790}
+  - {fileID: 431294810}
+  - {fileID: 244695978}
+  - {fileID: 327452551}
+  - {fileID: 1734497185}
+  - {fileID: 525405406}
+  - {fileID: 2057105943}
+  - {fileID: 1187400320}
+  - {fileID: 1618155282}
+  - {fileID: 1395053011}
+  - {fileID: 135699993}
+  - {fileID: 788607582}
+  - {fileID: 100061711}
+  - {fileID: 2030325229}
+  - {fileID: 1819896126}
+  - {fileID: 397917506}
+  - {fileID: 536641116}
+  - {fileID: 807713165}
+  - {fileID: 242133865}
+  - {fileID: 1289261922}
+  - {fileID: 243547763}
+  - {fileID: 1246660446}
+  - {fileID: 891223365}
+  - {fileID: 802011747}
+  - {fileID: 125333210}
+  - {fileID: 1601444731}
+  - {fileID: 655862740}
+  - {fileID: 85307679}
+  - {fileID: 1615266405}
+  - {fileID: 1575272418}
+  - {fileID: 389460675}
+  - {fileID: 1131731066}
+  - {fileID: 1209970707}
+  - {fileID: 910127885}
+  - {fileID: 1400519524}
+  - {fileID: 659525279}
+  - {fileID: 192011584}
+  - {fileID: 2134065764}
+  - {fileID: 1665331314}
+  - {fileID: 651249777}
+  - {fileID: 2013370100}
+  - {fileID: 489696189}
+  Destinos2:
   - {fileID: 187437765}
   - {fileID: 788371161}
   - {fileID: 324465623}
@@ -9899,7 +9954,7 @@ Transform:
   - {fileID: 1200393342}
   - {fileID: 719994435}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &798293519
 PrefabInstance:
@@ -14580,7 +14635,7 @@ GameObject:
   m_Layer: 0
   m_Name: Carro3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14597,7 +14652,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destiny: {fileID: 1944143998}
-  Destinos:
+  rota: 0
+  Destinos1:
   - {fileID: 1944143998}
   - {fileID: 1809183941}
   - {fileID: 1625137964}
@@ -14642,6 +14698,69 @@ MonoBehaviour:
   - {fileID: 389460675}
   - {fileID: 1131731066}
   - {fileID: 1209970707}
+  - {fileID: 910127885}
+  - {fileID: 1400519524}
+  - {fileID: 659525279}
+  - {fileID: 192011584}
+  - {fileID: 2134065764}
+  - {fileID: 1665331314}
+  - {fileID: 651249777}
+  - {fileID: 2013370100}
+  - {fileID: 489696189}
+  Destinos2:
+  - {fileID: 187437765}
+  - {fileID: 788371161}
+  - {fileID: 324465623}
+  - {fileID: 933930298}
+  - {fileID: 1272829222}
+  - {fileID: 1809500549}
+  - {fileID: 1612220432}
+  - {fileID: 584833557}
+  - {fileID: 34887294}
+  - {fileID: 1743623314}
+  - {fileID: 242847513}
+  - {fileID: 770814922}
+  - {fileID: 936008403}
+  - {fileID: 1250197283}
+  - {fileID: 1090284287}
+  - {fileID: 1070902974}
+  - {fileID: 244217775}
+  - {fileID: 1989124028}
+  - {fileID: 1823632559}
+  - {fileID: 808463219}
+  - {fileID: 1673754461}
+  - {fileID: 1944926556}
+  - {fileID: 1499506645}
+  - {fileID: 1495351334}
+  - {fileID: 1666084354}
+  - {fileID: 385325575}
+  - {fileID: 1462431082}
+  - {fileID: 2078812090}
+  - {fileID: 744174305}
+  - {fileID: 2094508393}
+  - {fileID: 473303830}
+  - {fileID: 2110080052}
+  - {fileID: 547227722}
+  - {fileID: 2068015193}
+  - {fileID: 1694536264}
+  - {fileID: 1202931379}
+  - {fileID: 214624642}
+  - {fileID: 285342618}
+  - {fileID: 2029735232}
+  - {fileID: 1389575220}
+  - {fileID: 879044206}
+  - {fileID: 1334100735}
+  - {fileID: 1753764167}
+  - {fileID: 1655737354}
+  - {fileID: 1227245462}
+  - {fileID: 1032017180}
+  - {fileID: 1126773608}
+  - {fileID: 889444311}
+  - {fileID: 1643295870}
+  - {fileID: 1371927099}
+  - {fileID: 527250977}
+  - {fileID: 1840718429}
+  - {fileID: 1742400422}
   ponteiro: 0
 --- !u!195 &1201763305
 NavMeshAgent:
@@ -14743,7 +14862,7 @@ Transform:
   - {fileID: 2044777158}
   - {fileID: 2074070857}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1202931379
 GameObject:
@@ -21330,7 +21449,7 @@ GameObject:
   m_Layer: 0
   m_Name: Carro4
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21347,7 +21466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destiny: {fileID: 1944143998}
-  Destinos:
+  rota: 0
+  Destinos1:
   - {fileID: 1944143998}
   - {fileID: 1809183941}
   - {fileID: 1625137964}
@@ -21392,6 +21512,69 @@ MonoBehaviour:
   - {fileID: 389460675}
   - {fileID: 1131731066}
   - {fileID: 1209970707}
+  - {fileID: 910127885}
+  - {fileID: 1400519524}
+  - {fileID: 659525279}
+  - {fileID: 192011584}
+  - {fileID: 2134065764}
+  - {fileID: 1665331314}
+  - {fileID: 651249777}
+  - {fileID: 2013370100}
+  - {fileID: 489696189}
+  Destinos2:
+  - {fileID: 187437765}
+  - {fileID: 788371161}
+  - {fileID: 324465623}
+  - {fileID: 933930298}
+  - {fileID: 1272829222}
+  - {fileID: 1809500549}
+  - {fileID: 1612220432}
+  - {fileID: 584833557}
+  - {fileID: 34887294}
+  - {fileID: 1743623314}
+  - {fileID: 242847513}
+  - {fileID: 770814922}
+  - {fileID: 936008403}
+  - {fileID: 1250197283}
+  - {fileID: 1090284287}
+  - {fileID: 1070902974}
+  - {fileID: 244217775}
+  - {fileID: 1989124028}
+  - {fileID: 1823632559}
+  - {fileID: 808463219}
+  - {fileID: 1673754461}
+  - {fileID: 1944926556}
+  - {fileID: 1499506645}
+  - {fileID: 1495351334}
+  - {fileID: 1666084354}
+  - {fileID: 385325575}
+  - {fileID: 1462431082}
+  - {fileID: 2078812090}
+  - {fileID: 744174305}
+  - {fileID: 2094508393}
+  - {fileID: 473303830}
+  - {fileID: 2110080052}
+  - {fileID: 547227722}
+  - {fileID: 2068015193}
+  - {fileID: 1694536264}
+  - {fileID: 1202931379}
+  - {fileID: 214624642}
+  - {fileID: 285342618}
+  - {fileID: 2029735232}
+  - {fileID: 1389575220}
+  - {fileID: 879044206}
+  - {fileID: 1334100735}
+  - {fileID: 1753764167}
+  - {fileID: 1655737354}
+  - {fileID: 1227245462}
+  - {fileID: 1032017180}
+  - {fileID: 1126773608}
+  - {fileID: 889444311}
+  - {fileID: 1643295870}
+  - {fileID: 1371927099}
+  - {fileID: 527250977}
+  - {fileID: 1840718429}
+  - {fileID: 1742400422}
   ponteiro: 0
 --- !u!195 &1735961684
 NavMeshAgent:
@@ -21493,7 +21676,7 @@ Transform:
   - {fileID: 723707701}
   - {fileID: 1849401562}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1741151958
 GameObject:
@@ -21512,7 +21695,7 @@ GameObject:
   m_Layer: 0
   m_Name: Carro1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -21594,7 +21777,7 @@ Transform:
   - {fileID: 1307494914}
   - {fileID: 65897482}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1741151963
 MonoBehaviour:
@@ -21609,7 +21792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destiny: {fileID: 1944143998}
-  Destinos:
+  rota: 0
+  Destinos1:
   - {fileID: 1944143998}
   - {fileID: 1809183941}
   - {fileID: 1625137964}
@@ -21663,6 +21847,60 @@ MonoBehaviour:
   - {fileID: 651249777}
   - {fileID: 2013370100}
   - {fileID: 489696189}
+  Destinos2:
+  - {fileID: 187437765}
+  - {fileID: 788371161}
+  - {fileID: 324465623}
+  - {fileID: 933930298}
+  - {fileID: 1272829222}
+  - {fileID: 1809500549}
+  - {fileID: 1612220432}
+  - {fileID: 584833557}
+  - {fileID: 34887294}
+  - {fileID: 1743623314}
+  - {fileID: 242847513}
+  - {fileID: 770814922}
+  - {fileID: 936008403}
+  - {fileID: 1250197283}
+  - {fileID: 1090284287}
+  - {fileID: 1070902974}
+  - {fileID: 244217775}
+  - {fileID: 1989124028}
+  - {fileID: 1823632559}
+  - {fileID: 808463219}
+  - {fileID: 1673754461}
+  - {fileID: 1944926556}
+  - {fileID: 1499506645}
+  - {fileID: 1495351334}
+  - {fileID: 1666084354}
+  - {fileID: 385325575}
+  - {fileID: 1462431082}
+  - {fileID: 2078812090}
+  - {fileID: 744174305}
+  - {fileID: 2094508393}
+  - {fileID: 473303830}
+  - {fileID: 2110080052}
+  - {fileID: 547227722}
+  - {fileID: 2068015193}
+  - {fileID: 1694536264}
+  - {fileID: 1202931379}
+  - {fileID: 214624642}
+  - {fileID: 285342618}
+  - {fileID: 2029735232}
+  - {fileID: 1389575220}
+  - {fileID: 879044206}
+  - {fileID: 1334100735}
+  - {fileID: 1753764167}
+  - {fileID: 1655737354}
+  - {fileID: 1227245462}
+  - {fileID: 1032017180}
+  - {fileID: 1126773608}
+  - {fileID: 889444311}
+  - {fileID: 1643295870}
+  - {fileID: 1371927099}
+  - {fileID: 527250977}
+  - {fileID: 1840718429}
+  - {fileID: 1742400422}
   ponteiro: 0
 --- !u!195 &1741151964
 NavMeshAgent:
