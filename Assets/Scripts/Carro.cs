@@ -13,6 +13,11 @@ public class Carro : MonoBehaviour
     public List<GameObject> Destinos1;
     public List<GameObject> Destinos2;
     public int ponteiro;
+    public int pos = 1;
+    public int posDistancia = 0;
+    public List<GameObject> TodosCarros;
+    public int volta;
+
      void Start()
     {
         Car = GetComponent<NavMeshAgent>();
@@ -32,6 +37,7 @@ public class Carro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DefinePos();
         if (rota == 1)
         {
 
@@ -100,5 +106,28 @@ public class Carro : MonoBehaviour
                     Destiny = Destinos2[ponteiro];
                 }
             }
+    }
+
+
+
+    private void OnTriggerEnter(Collider passou)
+    {
+        if(passou.gameObject.tag == "Bandeira")
+        {
+            volta++;
+        }
+    }
+
+
+    void DefinePos()
+    {
+        pos = 1;
+        for(int i= 0; i < TodosCarros.Count; i++)
+        {
+            if(TodosCarros[i].GetComponent<Carro>().posDistancia > posDistancia)
+            {
+                pos++;
+            }
+        }
     }
 }
