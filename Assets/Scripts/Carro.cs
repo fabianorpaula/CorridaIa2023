@@ -14,7 +14,7 @@ public class Carro : MonoBehaviour
     public List<GameObject> Destinos2;
     public int ponteiro;
     public int pos = 1;
-    public int posDistancia = 0;
+    public float posDistancia = 0;
     public List<GameObject> TodosCarros;
     public int volta;
 
@@ -37,6 +37,8 @@ public class Carro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //DistanciaPonteiroAndeiro
+        
         DefinePos();
         if (rota == 1)
         {
@@ -70,6 +72,14 @@ public class Carro : MonoBehaviour
                     rota = Random.Range(1, 3);
                 }
                 Destiny = Destinos1[ponteiro];
+
+
+                //Envia O ponteiro Para ser calculado
+                int pontAtual = ponteiro - 1;
+                if (pontAtual < 0) { pontAtual = Destinos1.Count - 1; }
+                MinhaDistancia(Destinos1[pontAtual].transform.position);
+
+
             }
         }
             if (rota == 2)
@@ -104,7 +114,12 @@ public class Carro : MonoBehaviour
                         rota = Random.Range(1, 3);
                     }
                     Destiny = Destinos2[ponteiro];
-                }
+
+                //Envia O ponteiro Para ser calculado
+                int pontAtual = ponteiro - 1;
+                if (pontAtual < 0) { pontAtual = Destinos2.Count - 1; }
+                MinhaDistancia(Destinos2[pontAtual].transform.position);
+            }
             }
     }
 
@@ -129,5 +144,13 @@ public class Carro : MonoBehaviour
                 pos++;
             }
         }
+    }
+
+    void MinhaDistancia(Vector3 ponteiroAnterio)
+    {
+        
+        float disPont = Vector3.Distance(ponteiroAnterio, transform.position);
+
+        posDistancia = (volta * 100000) + (ponteiro * 1000) + disPont;
     }
 }

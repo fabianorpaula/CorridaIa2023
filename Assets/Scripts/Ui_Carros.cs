@@ -14,9 +14,9 @@ public class Ui_Carros : MonoBehaviour
     
     void Update()
     {
-        nomeT.text = meuCarro.name;
-        voltaT.text = meuCarro.volta.ToString();
-        velT.text = meuCarro.GetComponent<NavMeshAgent>().speed.ToString();
-        posT.text = meuCarro.pos.ToString();
+        nomeT.text = "Nome: "+meuCarro.name;
+        voltaT.text = "Voltar: "+meuCarro.volta.ToString();
+        velT.text = meuCarro.GetComponent<NavMeshAgent>().speed.ToString()+" Km/h";
+        posT.text = "Pos: "+meuCarro.pos.ToString();
     }
 }
